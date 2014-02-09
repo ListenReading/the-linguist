@@ -1,1 +1,3 @@
-Multilingual audio and text alignment of "The Way of the Linguist" book by Steve Kaufmann, which is CC-BY-ND licensed, and available here: http://www.thelinguist.com/book/
+[The Way of the Linguist](http://www.thelinguist.com/book/) book by Steve Kaufmann, which is [CC-BY-ND](http://creativecommons.org/licenses/by-nd/3.0/) licensed, and presented in a multilingual-aligned text and audio form.
+
+The book discusses the principles behind [LingQ.com](http://www.lingq.com/). Sign up for an account and take advantage of [LingQ's](http://www.lingq.com/) language learning tools.
