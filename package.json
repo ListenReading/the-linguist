@@ -1,5 +1,8 @@
 {
   "devDependencies": {
-    "gulp": "~3.5.2"
+    "gulp":    "~3.5.2",
+    "connect": "~2.12.0",
+    "envify":  "~0.2.0",
+    "react":   "~0.8.0"
   }
 }
