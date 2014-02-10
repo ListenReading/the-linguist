@@ -4,7 +4,7 @@ var gulp       = require('gulp'),
 
 // Single entry point to browserify
 gulp.task('scripts', function() {
-  gulp.src('src/browser-main.js')
+  gulp.src('src/app.js')
   .pipe(watch())
   .pipe(browserify({
     //insertGlobals : true,
