@@ -1,7 +1,7 @@
 var $ = require('jquery'),
     _ = require('lodash');
 
-var Audio = require('./components/audio.js');
+var Audio = require('./components/audio');
 
 // after doc loaded
 $(function() {

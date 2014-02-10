@@ -8,7 +8,9 @@ gulp.task('scripts', function() {
   .pipe(watch())
   .pipe(browserify({
     //insertGlobals : true,
-    debug : !gulp.env.production
+    debug: !gulp.env.production,
+    transform:  ['coffeeify'],
+    extensions: ['.coffee']
   }))
   .pipe(gulp.dest('./build/js'))
 });
