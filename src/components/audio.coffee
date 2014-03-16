@@ -1,8 +1,22 @@
 React = require('react');
 
-module.exports = React.createClass(
+# some 'imports'
+DOM = React.DOM
+T = React.PropTypes
+
+
+module.exports = React.createClass({
   displayName: 'Audio'
-  
+
+  # inputs
+  propTypes: {
+    src: T.string.isRequired
+  }
+
   render: ->
-    React.div(null, "Audio tag goes here")
-)
+    DOM.audio({
+      controls: "controls"
+      type: "audio/mp3"
+      src: @props.src
+    })
+})
