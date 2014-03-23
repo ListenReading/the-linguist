@@ -1,6 +1,7 @@
 var gulp       = require('gulp'),
     browserify = require('gulp-browserify'),
-    watch      = require('gulp-watch')
+    watch      = require('gulp-watch'),
+    mocha      = require('gulp-mocha');
 
 // Single entry point to browserify
 gulp.task('scripts', function() {
@@ -18,6 +19,11 @@ gulp.task('scripts', function() {
 // Rerun the task when a file changes
 gulp.task('watch', function () {
   gulp.watch('src/**/*', ['scripts']);
+});
+
+gulp.task('mocha', function () {
+    gulp.src('test/*.js')
+        .pipe(mocha({reporter: 'nyan'}));
 });
 
 gulp.task('default', ['scripts', 'watch'],function(){

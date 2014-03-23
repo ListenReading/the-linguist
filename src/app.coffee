@@ -13,7 +13,6 @@ AudioPlayer = require('./AudioPlayer')
 $ ->
   
   # setup player
-  #React.renderComponent(Audio(src:"raw/en/01.mp3"), $('#player')[0])
   audioPlayer = new AudioPlayer('raw/en/01.mp3');
   React.renderComponent(PlayerWithControls({audioPlayer:audioPlayer}), document.getElementById('player'));
 
