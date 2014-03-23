@@ -21,12 +21,16 @@ gulp.task('watch', function () {
   gulp.watch('src/**/*', ['scripts']);
 });
 
-gulp.task('mocha', function () {
+gulp.task('test', function () {
     gulp.src('test/*.js')
         .pipe(mocha({reporter: 'nyan'}));
 });
 
-gulp.task('default', ['scripts', 'watch'],function(){
+gulp.task('server', ['scripts', 'watch'], function(){
   // run local server
   require('./server.js');
 });
+
+gulp.task('all', ['test', 'server']);
+
+gulp.task('default', ['server']);
