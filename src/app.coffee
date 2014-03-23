@@ -1,14 +1,21 @@
-$ = require('jquery')
-_ = require('lodash')
-
+# imports
+$     = require('jquery')
+_     = require('lodash')
 React = require('react');
-Audio = require('./components/audio')
+# react components
+Audio              = require('./components/audio')
+PlayerWithControls = require('./components/PlayerWithControls')
+#classes
+AudioPlayer = require('./AudioPlayer')
+
 
 # after doc loaded
 $ ->
   
   # setup player
-  React.renderComponent(Audio(src:"raw/en/01.mp3"), $('#player')[0])
+  #React.renderComponent(Audio(src:"raw/en/01.mp3"), $('#player')[0])
+  audioPlayer = new AudioPlayer('raw/en/01.mp3');
+  React.renderComponent(PlayerWithControls({audioPlayer:audioPlayer}), document.getElementById('player'));
 
   # fetch the TXT
   fetch_txt_en = $.get('raw/en/01.txt');
