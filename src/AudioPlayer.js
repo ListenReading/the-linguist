@@ -1,3 +1,4 @@
+// Sets up an <audio> tag and exposes helpful methods to query and modify the playback, such as changeRate().
 function AudioPlayer(src) {
   this.audio     = new Audio();
   this.audio.src = src;

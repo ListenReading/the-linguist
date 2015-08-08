@@ -1,10 +1,30 @@
 <html>
 <head>
   <script src="build/js/app.js"></script>
+  <script src="http://code.responsivevoice.org/responsivevoice.js"></script>
+  <style>
+  .l1 {
+    color: #82A3B9;
+  }    
+  .l2 {
+    color: black;
+  }    
+  body {
+    font-family: sans-serif;
+  }
+  article {
+    padding: 2em;
+  }
+  .sentencePair {
+    padding-bottom: 1em;
+  }
+  </style>
 </head>
 <body>
   Hello world!
+  <input onclick='responsiveVoice.speak("Hello World");' type='button' value='Play'/>
   <div id="player"></div>
   <div id="transcript"></div>
+  <div><a href="http://responsivevoice.org">ResponsiveVoice-NonCommercial</a> licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img title="ResponsiveVoice Text To Speech" src="http://responsivevoice.org/wp-content/uploads/2014/08/95x15.png" alt="95x15" width="95" height="15" /></div>
 </body>
 </html>

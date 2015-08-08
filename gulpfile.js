@@ -26,8 +26,8 @@ gulp.task('test', function () {
         .pipe(mocha({reporter: 'nyan'}));
 });
 
+// run local server
 gulp.task('server', ['scripts', 'watch'], function(){
-  // run local server
   require('./server.js');
 });
 
